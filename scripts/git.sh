@@ -12,7 +12,7 @@ binst git git-lfs pre-commit scmpuff
 # USER_NAME="robertoriv"
 # PRIVATE_KEY="${HOME}/.ssh/github"
 # echo "\n\n"
-# [ ! -f ${PRIVATE_KEY} ] && ssh-keygen -f "${PRIVATE_KEY}" -t rsa -b 4096 -C "roberto.rivera@gmail.com"
+# [ ! -f ${PRIVATE_KEY} ] && ssh-keygen -f "${PRIVATE_KEY}" -t rsa -b 4096 -C "${EMAIL}"
 # cat "${PRIVATE_KEY}.pub" | pbcopy
 # echo "\n${TXTGRN}${PRIVATE_KEY}.pub${TXTRST} has been copied to your clipboard..."
 # read -s -k $'?Press [Enter] after you have uploaded the key to GitHub.\n'

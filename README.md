@@ -26,8 +26,6 @@ An opinionated approach to getting a Mac ready for development in a hurry.
 ## Usage
 
 ```
-git config --global user.name "Roberto Rivera"
-git config --global user.email roberto.rivera@gmail.com
 ./install.sh && source ~/.zshrc
 ```
 
