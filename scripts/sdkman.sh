@@ -11,6 +11,7 @@ if [ -d "${SDKMAN_LOCATION}" ]; then
 else
     log_installation "Software Development Kit Manager" 
     curl -s "https://get.sdkman.io" | bash
+    source "${HOME}/.sdkman/bin/sdkman-init.sh"
 fi
 
 sdk version
