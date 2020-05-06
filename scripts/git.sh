@@ -6,6 +6,7 @@ source "$(dirname "$0")/helpers.sh"
 source "$(dirname "$0")/colors.sh"
 
 binst git git-lfs pre-commit scmpuff
+/usr/local/bin/git lfs install
 
 # if we are here, we've already cloned the repo. so...
 # USER_NAME="robertoriv"
