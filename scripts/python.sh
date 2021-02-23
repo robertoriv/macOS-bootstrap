@@ -12,6 +12,9 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 
 eval "$(pyenv init -)"
 
+echo "Installing ${TXTBLU}pyenv-virtualenv${TXTRST}"
+git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+
 echo ""
 echo "Installing ${TXTBLU}python${TXTRST} version ${BLDWHT}${BAKBLU}${PYTHON_VERSION}${TXTRST}..."
 pyenv install -s "${PYTHON_VERSION}"
