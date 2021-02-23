@@ -20,3 +20,4 @@ install_homebrew(){
 }
 
 install_homebrew
+brew bundle

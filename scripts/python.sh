@@ -5,9 +5,7 @@ source "$(dirname "$0")/helpers.sh"
 # shellcheck source=colors.sh
 source "$(dirname "$0")/colors.sh"
 
-PYTHON_VERSION=${PYTHON_VERSION:-3.8.2}
-
-binst pyenv pipenv
+PYTHON_VERSION=${PYTHON_VERSION:-3.9.1}
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -15,7 +13,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 echo ""
-echo "Installing ${TXTBLU}python${TXTRST} version ${BLDBLK}${BAKBLU}${PYTHON_VERSION}${TXTRST}..."
+echo "Installing ${TXTBLU}python${TXTRST} version ${BLDWHT}${BAKBLU}${PYTHON_VERSION}${TXTRST}..."
 pyenv install -s "${PYTHON_VERSION}"
 pyenv global "${PYTHON_VERSION}"
 

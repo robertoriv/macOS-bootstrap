@@ -19,12 +19,20 @@ log_already_cloned(){
 
 binst(){
     echo "Installing with ${TXTGRN}brew${TXTRST}: [${BLDBLU}$*${TXTRST}]"
-    /usr/local/bin/brew install "$@" || /usr/local/bin/brew upgrade "$@"
+    if [ -d "/opt/homebrew/bin" ]; then
+        /opt/homebrew/bin/brew install "$@" || /opt/homebrew/bin/brew upgrade "$@"
+    else
+        /usr/local/bin/brew install "$@" || /usr/local/bin/brew upgrade "$@"
+    fi
 }
 
 bcinst(){
     echo "Installing from cask: [${BLDBLU}$*${TXTRST}]"
-    /usr/local/bin/brew cask install "$@"
+    if [ -d "/opt/homebrew/bin" ]; then
+        /opt/homebrew/bin/brew install "$@"
+    else
+        /usr/local/bin/brew install "$@"
+    fi
 }
 
 prompt-script(){
