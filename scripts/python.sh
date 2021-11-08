@@ -5,7 +5,7 @@ source "$(dirname "$0")/helpers.sh"
 # shellcheck source=colors.sh
 source "$(dirname "$0")/colors.sh"
 
-PYTHON_VERSION=${PYTHON_VERSION:-3.9.1}
+PYTHON_VERSION=${PYTHON_VERSION:-3.9.7}
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
