@@ -1,8 +1,5 @@
 tap "apparition47/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/core"
 brew "argocd"
 brew "asdf"
 brew "awscli"
