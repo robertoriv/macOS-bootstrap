@@ -5,7 +5,7 @@ source "$(dirname "$0")/helpers.sh"
 # shellcheck source=colors.sh
 source "$(dirname "$0")/colors.sh"
 
-PYTHON_VERSION=${PYTHON_VERSION:-3.9.7}
+PYTHON_VERSION=${PYTHON_VERSION:-3.13.1}
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -29,6 +29,11 @@ echo "Active ${TXTBLU}python${TXTRST} version:"
 python --version
 
 echo ""
+echo "Installing ${TXTBLU}pipx${TXTRST}..."
+brew install pipx
+pipx ensurepath
+
+echo ""
 echo "Installing ${TXTBLU}poetry${TXTRST}..."
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+pipx install poetry
 
