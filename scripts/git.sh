@@ -7,6 +7,10 @@ source "$(dirname "$0")/colors.sh"
 
 $(brew --prefix)/bin/git lfs install
 
+# download required repositories
+mkdir -p "${HOME}/code/catppuccin/"
+git clone git@github.com:catppuccin/delta.git "${HOME}/code/catppuccin/delta"
+
 # if we are here, we've already cloned the repo. so...
 # USER_NAME="robertoriv"
 # PRIVATE_KEY="${HOME}/.ssh/github"
