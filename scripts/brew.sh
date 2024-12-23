@@ -19,6 +19,6 @@ install_homebrew(){
     fi
 }
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
 install_homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 brew bundle
