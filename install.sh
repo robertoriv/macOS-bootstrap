@@ -13,8 +13,6 @@ prompt-script "./scripts/git.sh"
 prompt-script "./scripts/omz.sh"
 prompt-script "./scripts/dotfiles.sh"
 prompt-script "./scripts/terraform.sh"
-prompt-script "./scripts/vscode.sh"
-prompt-script "./scripts/sdkman.sh"
 prompt-script "./scripts/python.sh"
 
 echo ""
