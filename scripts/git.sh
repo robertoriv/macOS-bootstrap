@@ -10,6 +10,7 @@ $(brew --prefix)/bin/git lfs install
 # download required repositories
 mkdir -p "${HOME}/code/catppuccin/"
 git clone git@github.com:catppuccin/delta.git "${HOME}/code/catppuccin/delta"
+git clone git@github.com:catppuccin/warp.git "${HOME}/code/catppuccin/warp"
 
 # if we are here, we've already cloned the repo. so...
 # USER_NAME="robertoriv"
