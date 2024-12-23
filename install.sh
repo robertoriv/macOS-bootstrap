@@ -6,8 +6,8 @@ source "$(dirname "$0")/scripts/helpers.sh"
 source "$(dirname "$0")/scripts/colors.sh"
 
 prompt-script "./scripts/brew.sh"
-[ -d "/usr/local/bin" ] && eval $(/usr/local/bin/brew shellenv)
-[ -d "/opt/homebrew/bin" ] &&  eval $(/opt/homebrew/bin/brew shellenv)
+[ -f "/usr/local/bin/brew" ] && eval $(/usr/local/bin/brew shellenv)
+[ -f "/opt/homebrew/bin/brew" ] && eval $(/opt/homebrew/bin/brew shellenv)
 
 prompt-script "./scripts/git.sh"
 prompt-script "./scripts/omz.sh"
